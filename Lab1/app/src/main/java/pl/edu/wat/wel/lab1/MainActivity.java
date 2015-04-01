@@ -1,9 +1,13 @@
 package pl.edu.wat.wel.lab1;
 
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -36,4 +40,20 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    /**
+     * Przywitanie imienne użytkownika z wykorzystaniem Toast
+     * @param view
+     */
+    public void buttonOnClickListener(View view) {
+
+        EditText nameEditText = (EditText) findViewById(R.id.nameEditText);
+        String name = nameEditText.getText().toString();
+
+        Context context = getApplicationContext();
+
+        Toast.makeText(context, "Witaj " + name + "!", Toast.LENGTH_SHORT).show();
+
+    }
+
 }
