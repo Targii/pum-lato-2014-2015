@@ -1,6 +1,7 @@
 package pl.edu.wat.wel.lab1;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,6 +12,9 @@ import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    // NAZWA NASZEGO ATRYBUTU W INTENT
+    public static final String EXTRA_NAME = "NAME";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +58,20 @@ public class MainActivity extends ActionBarActivity {
 
         Toast.makeText(context, "Witaj " + name + "!", Toast.LENGTH_SHORT).show();
 
+    }
+
+    /**
+     * Przekierowanie użytkownika na ekran logowania
+     * @param view
+     */
+    public void loginButtonOnClickListener(View view) {
+
+        Intent intent = new Intent(this, LoginActivity.class);
+        EditText nameEditText = (EditText) findViewById(R.id.nameEditText);
+
+        intent.putExtra(EXTRA_NAME, nameEditText.getText().toString());
+
+        startActivity(intent);
     }
 
 }
