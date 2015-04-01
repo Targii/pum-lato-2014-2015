@@ -7,5 +7,6 @@
     <string name="name">Imię</string>
     <string name="greet_me">Przywitaj mnie!</string>
     <string name="go_to_login">Przejdź do logowania</string>
+    <string name="search">Szukaj</string>
 
 </resources>
