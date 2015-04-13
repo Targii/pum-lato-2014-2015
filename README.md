@@ -33,4 +33,5 @@
   - [dodać opis]
 - Kompatybilność wsteczna
   - [dodać opis]
-- [dokończyć]
+- Cykl zycia aplikacji
+- Zapis stanu (np. przy obracaniu ekranu)
