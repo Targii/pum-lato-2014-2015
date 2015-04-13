@@ -8,5 +8,6 @@
     <string name="greet_me">Przywitaj mnie!</string>
     <string name="go_to_login">Przejdź do logowania</string>
     <string name="search">Szukaj</string>
+    <string name="title_activity_search">Szukaj</string>
 
 </resources>

@@ -33,11 +33,18 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
+        Intent intent;
+
         // Przejście do ustawień po wybraniu pozycji z menu
         switch (item.getItemId()) {
 
             case R.id.action_settings:
-                Intent intent = new Intent(this, SettingsActivity.class);
+                intent = new Intent(this, SettingsActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.action_search:
+                intent = new Intent(this, SearchActivity.class);
                 startActivity(intent);
                 break;
 
@@ -68,7 +75,7 @@ public class MainActivity extends ActionBarActivity {
      * @param view
      */
     public void loginButtonOnClickListener(View view) {
-
+        
         Intent intent = new Intent(this, LoginActivity.class);
         EditText nameEditText = (EditText) findViewById(R.id.nameEditText);
 
