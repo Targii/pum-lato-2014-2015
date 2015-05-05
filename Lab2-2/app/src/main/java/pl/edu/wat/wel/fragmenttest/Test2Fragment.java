@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Przykładowy fragment zbudowany z wykorzystaniem kreatora
  */
 public class Test2Fragment extends Fragment {
 

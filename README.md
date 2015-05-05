@@ -26,12 +26,13 @@
 ### Laboratorium 2
 - Lokalizacja aplikacji (aplikacje wielojęzyczne)
   - Tłumaczenia w folderach /res/values-[KOD_JĘZYKA]/strings.xml
-  - Sprawdzenie z poziomu adb:
-  - `adb shell`
-  - `setprop persist.sys.language KOD_JĘZYKA;setprop persist.sys.country KOD_KRAJU;stop;sleep 5;start`
 - Layouty pionowe / poziome, dla różnych rozmiarów wyświetlacz
-  - [dodać opis]
+  - layout poziomy - layout-land, mogą występować elementy o tym samym ID
 - Kompatybilność wsteczna
-  - [dodać opis]
 - Cykl zycia aplikacji
-- Zapis stanu (np. przy obracaniu ekranu)
+- Zapis danych
+  - Zapis stanu (np. przy obracaniu ekranu)
+  - Zapis danych do pliku w pamięci urządzenia
+  - Ustawienia aplikacji - SharedPreferences
+- Fragmenty
+- RecycledView
